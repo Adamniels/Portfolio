@@ -1,11 +1,10 @@
-// src/components/Sidebar.tsx
 import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export default function Sidebar() {
   return (
-    <aside className="bg-gradient-to-b from-[#0f172a] to-[#1e293b] text-white w-full md:w-1/3 lg:w-1/4 min-h-screen p-8 flex flex-col justify-between items-center md:items-start text-center md:text-left fixed md:static">
-      {/* Profil + info */}
+    <aside className="bg-gradient-to-b from-[#0f172a] to-[#1e293b] text-white w-full md:w-1/3 lg:w-1/4 md:min-h-screen px-4 py-6 md:px-8 md:py-8 flex flex-col items-center md:items-start text-center md:text-left">
+      {/* Profil och beskrivning (alltid synlig) */}
       <div className="flex flex-col items-center md:items-start">
         <img
           src="/Portfolio/profile.png"
@@ -17,9 +16,11 @@ export default function Sidebar() {
           Backend/Fullstack Developer
         </p>
         <p className="mt-4 text-gray-300">Vad ska jag skriva här? TODO:</p>
+      </div>
 
-        {/* Navigation */}
-        <nav className="mt-10 flex flex-col gap-3 text-gray-400 text-sm w-full">
+      {/* Navigering och sociala ikoner (bara på desktop) */}
+      <div className="hidden md:flex flex-col justify-between h-full mt-10 w-full">
+        <nav className="flex flex-col gap-3 text-gray-400 text-sm">
           <Link to="/" className="hover:text-white">
             HOME
           </Link>
@@ -39,30 +40,31 @@ export default function Sidebar() {
             CONTACT ME
           </Link>
         </nav>
-      </div>
-      {/* Social icons */}
-      <div className="flex gap-4 mt-10 text-xl">
-        <a
-          href="https://github.com/Adamniels"
-          target="_blank"
-          className="hover:text-white"
-        >
-          <FaGithub />
-        </a>
-        <a
-          href="https://linkedin.com/"
-          target="_blank"
-          className="hover:text-white"
-        >
-          <FaLinkedin />
-        </a>
-        <a
-          href="https://instagram.com/"
-          target="_blank"
-          className="hover:text-white"
-        >
-          <FaInstagram />
-        </a>
+
+        {/* Ikoner */}
+        <div className="flex gap-4 mt-10 text-xl mb-8">
+          <a
+            href="https://github.com/Adamniels"
+            target="_blank"
+            className="hover:text-white"
+          >
+            <FaGithub />
+          </a>
+          <a
+            href="https://linkedin.com/"
+            target="_blank"
+            className="hover:text-white"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://instagram.com/"
+            target="_blank"
+            className="hover:text-white"
+          >
+            <FaInstagram />
+          </a>
+        </div>
       </div>
     </aside>
   );

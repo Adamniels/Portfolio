@@ -1,5 +1,6 @@
 // src/pages/Contact.tsx
 import { FiPhone, FiMail, FiMapPin} from "react-icons/fi"
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export default function Contact() {
   return (
@@ -22,6 +23,30 @@ export default function Contact() {
           <span>Prästgårdsgatan 8, Uppsala</span>
         </li>
       </ul>
+      {/* Ikoner */}
+      <div className="flex gap-4 mt-10 text-xl mb-8">
+          <a
+            href="https://github.com/Adamniels"
+            target="_blank"
+            className="hover:text-white"
+          >
+            <FaGithub />
+          </a>
+          <a
+            href="https://linkedin.com/"
+            target="_blank"
+            className="hover:text-white"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://instagram.com/"
+            target="_blank"
+            className="hover:text-white"
+          >
+            <FaInstagram />
+          </a>
+        </div>
     </section>
   )
 }

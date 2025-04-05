@@ -1,7 +1,7 @@
 // src/pages/Experience.tsx
 export default function Experience() {
   return (
-    <section className="max-w-3xl mx-auto">
+    <section className="max-w-3xl">
       <h1 className="text-4xl font-bold text-white mb-10">Experience</h1>
 
       {/* EDUCATION */}
