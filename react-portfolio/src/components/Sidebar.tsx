@@ -8,7 +8,7 @@ export default function Sidebar() {
       {/* Profil + info */}
       <div className="flex flex-col items-center md:items-start">
         <img
-          src="/profile.png"
+          src="/Portfolio/profile.png"
           alt="Profile"
           className="w-40 h-40 rounded-full border-4 border-white shadow-lg mb-4"
         />
