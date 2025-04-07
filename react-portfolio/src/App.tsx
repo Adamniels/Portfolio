@@ -6,6 +6,11 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Experience from "./pages/Experience";
 import TechnicalExperience from "./pages/TechnicalExp";
+import MiniJobQueue from "./pages/projects/MiniJobQueue";
+import PadelTournament from "./pages/projects/PadelTournament";
+import GarbageCollector from "./pages/projects/GarbageCollector";
+
+
 
 function App() {
   return (
@@ -17,6 +22,9 @@ function App() {
         <Route path="/technicalExperience" element={<TechnicalExperience />} />
         <Route path="/about" element={<About />}></Route>
         <Route path="/contact" element={<Contact />} />
+        <Route path="/projects/jobqueue" element={<MiniJobQueue />} />
+        <Route path="/projects/padel" element={<PadelTournament />} />
+        <Route path="/projects/gc" element={<GarbageCollector />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Layout>

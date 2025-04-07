@@ -1,11 +1,12 @@
+import { Link } from "react-router-dom";
+
 export default function Projects() {
   return (
     <section className="max-w-3xl">
       <h1 className="text-4xl font-bold text-white mb-6">Projects</h1>
       <h2 className="font-bold text-red-400 mb-6">
         TODO: nu har jag chansen att verkligen skriva ut och förklara mina
-        projket på en annan nivå, ta med system strukturen och liknande. kanske
-        ha en egen sida för varje projket
+        projekt på en djupare nivå, ta med system strukturen och liknande.
       </h2>
 
       <p className="text-lg text-gray-300 leading-relaxed">
@@ -28,6 +29,9 @@ export default function Projects() {
           independent Go programs that connect to the server, receive a job,
           execute it, and send back the result.
         </p>
+        <Link to="/projects/jobqueue" className="text-blue-400 hover:underline ml-1">
+          Read more →
+        </Link>
       </div>
 
       <div className="mt-8">
@@ -39,6 +43,9 @@ export default function Projects() {
           This project focused on data structures, program logic, and writing
           code that is understandable, extendable, and maintainable.
         </p>
+        <Link to="/projects/padel" className="text-blue-400 hover:underline ml-1">
+          Read more →
+        </Link>
       </div>
 
       <div className="mt-8">
@@ -51,6 +58,9 @@ export default function Projects() {
           via the library’s own functions. The project is based on Bartlett’s
           algorithm and organizes memory using pages.
         </p>
+        <Link to="/projects/gc" className="text-blue-400 hover:underline ml-1">
+          Read more →
+        </Link>
       </div>
 
       <p className="text-lg text-gray-300 leading-relaxed mt-8">

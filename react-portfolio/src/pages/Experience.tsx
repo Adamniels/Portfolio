@@ -68,7 +68,6 @@ export default function Experience() {
             Carpenter · Cerves AB
           </h3>
           <p className="text-sm text-gray-400 mb-2">2019 – 2023</p>
-          <p className="font-bold text-red-400">TODO: Skriva om</p>
 
           <div className="mt-4 space-y-3 text-gray-300 leading-relaxed">
             <p>

@@ -12,11 +12,20 @@ export default function Sidebar() {
           className="w-40 h-40 rounded-full border-4 border-white shadow-lg mb-4"
         />
         <h1 className="text-3xl font-bold">Adam Nielsen</h1>
-        <p className="text-sm text-gray-400 mt-2">
+        <p className="text-base font-medium text-gray-300 mt-2 tracking-wide">
           Backend/Fullstack Developer
         </p>
-        <p className="mt-4 text-gray-300">Vad ska jag skriva här? TODO:</p>
+        <p className="mt-3 mb-4 text-sm leading-snug text-gray-400 max-w-xs mx-auto md:mx-0">
+          Passionate about building software that solves real problems, ranging
+          from system level tools to full stack applications. Always eager to
+          learn new technologies and turn ideas into code.
+        </p>
       </div>
+      {/* 
+      - Passionate about building useful software, learning new technologies, and turning ideas into code.
+      - Backend-focused IT student with a love for problem-solving and creative development — currently exploring WebSockets, Go, and system design.
+      
+      */}
 
       {/* Navigering och sociala ikoner (bara på desktop) */}
       <div className="hidden md:flex flex-col justify-between h-full mt-10 w-full">
