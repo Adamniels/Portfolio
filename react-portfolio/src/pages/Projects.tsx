@@ -29,21 +29,29 @@ export default function Projects() {
           independent Go programs that connect to the server, receive a job,
           execute it, and send back the result.
         </p>
-        <Link to="/projects/jobqueue" className="text-blue-400 hover:underline ml-1">
+        <Link
+          to="/projects/jobqueue"
+          className="text-blue-400 hover:underline ml-1"
+        >
           Read more →
         </Link>
       </div>
 
       <div className="mt-8">
         <h2 className="text-2xl font-semibold text-white">
-          Padel Tournament System (Java)
+          Padel Tournament System (Java + Vue)
         </h2>
+
         <p className="text-gray-300 mt-2">
-          A terminal-based system for managing tournaments and tracking scores.
-          This project focused on data structures, program logic, and writing
-          code that is understandable, extendable, and maintainable.
+          A web-based tournament manager built with a Java Spring Boot backend
+          and a Vue 3 frontend. This project focuses on real-world application
+          structure, efficient scheduling logic, and writing code that is clear,
+          modular, and easy to extend or maintain.
         </p>
-        <Link to="/projects/padel" className="text-blue-400 hover:underline ml-1">
+        <Link
+          to="/projects/padel"
+          className="text-blue-400 hover:underline ml-1"
+        >
           Read more →
         </Link>
       </div>
